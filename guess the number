@@ -1,0 +1,12 @@
+import random
+hit =random.randint(1,100)
+while True:
+    userchoice=int(input("guess the target"))
+    if(userchoice==hit):
+        print("success:")
+        break
+    elif(userchoice<hit):
+        print("ur number is too small take a bigger number  ")
+    else:
+        print("ur number is too big take another number")
+print("GAME OVER--->>>")
