@@ -1,7 +1,10 @@
 import random
 hit =random.randint(1,100)
 while True:
-    userchoice=int(input("guess the target"))
+    userchoice=input ("guess the target or quit(q))")
+    if (userchoice=="q"):
+        break
+    userchoice= int(userchoice)
     if(userchoice==hit):
         print("success:")
         break
